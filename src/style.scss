@@ -1,0 +1,118 @@
+body{
+  min-height:100%;
+  font-family: ‘Helvetica’;
+  background: #f5f5f5;
+}
+
+.title{
+  margin: 0;
+  padding:10px 28px;
+  font-weight: normal;
+  color: #ebd4d0;
+  text-align: center;
+  font-size: 100px;
+}
+input{
+  background: white;
+  opacity: 0.7;
+  width: 90%;
+  border: none;
+  box-sizing: border-box;
+  height:50px ;
+  font-size: 20px;
+  font-weight: 0.5px;
+  padding-left:25px;
+
+}
+input:focus{
+  background: white;
+  outline: none;
+  color: gray;
+}
+
+span{
+  margin-right: 10px;
+  text-align:center;
+  height:50px;
+  width: 0;
+  opacity: 0;
+  -webkit-transition:0.3s;
+  transition: 0.3s linear;
+}
+
+i{
+  cursor: pointer;
+}
+
+.navigation {
+  margin-left: 320px;
+  
+}
+.buttons {
+  background-color: inherit;
+  border: none;
+  padding: 4px;
+  margin: 15px;
+  text-align: center;
+  font-size: 15px;
+  border-radius:4px;
+  cursor: pointer;
+  outline: none;
+  display: inline-block;
+}
+
+.buttons:hover {
+  border: 1px solid #ebd4d0;
+  color: #727271;
+}
+
+.todo{
+  margin: 0 auto ;
+  box-shadow:-1px 6px 20px 0px grey;
+  max-width: 500px;
+  height:100%;
+  background:white;
+  position: relative;
+}
+
+.todos{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.todos li{
+  background: white;
+  height:50px;
+  line-height: 50px;
+  cursor: pointer;
+  font-size: 20px;
+  border-top: 1px solid  #cfcfce;
+}
+.todos li:last-child {
+  border-bottom: 1px solid  #cfcfce;
+}
+
+.todos li:hover span{
+  width: 50px;
+  opacity: 1.0;
+  margin-left: 5px;
+}
+.display{
+  display:none;
+  transition: 0.3s linear;
+}
+.checked{
+  color:gray;
+  text-decoration:line-through;
+}
+
+.fa-trash-alt{
+  color:#7f7fd5;
+}
+.arrow {
+  display: inline-block;
+  cursor: pointer;
+  transform: rotate(90deg);
+  margin-left: 15px;
+  color: #727272;
+}
