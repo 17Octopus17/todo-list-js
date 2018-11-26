@@ -5,7 +5,7 @@
   const saveBtn = document.querySelector('.save');
   const clearBtn = document.querySelector('.clear');
   const arrow = document.querySelector('.arrow');
-
+   
   arrow.addEventListener('click', () => {
     ul.classList.toggle('display');
   });
@@ -24,13 +24,15 @@
       const li = document.createElement('li');
       const spanElement = document.createElement('span');
       const icon = document.createElement('i');
+      const unchecked = document.createElement('a');
+      unchecked.innerHTML = '<img class="uncheck" src="images/unchecked.svg" >';
 
       const newTodo = this.value;
-      this.value = ' ';
+      this.value = '';
 
-      icon.classList.add('fas', 'fa-trash-alt');
+      icon.classList.add('fas', 'fa-times');
       spanElement.append(icon);
-      ul.insertBefore(li, ul.children[1]).append(spanElement, newTodo);
+      ul.insertBefore(li, ul.children[1]).append(unchecked, spanElement, newTodo);
 
       deleteTodo();
     }
