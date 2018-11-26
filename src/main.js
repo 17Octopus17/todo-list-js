@@ -4,8 +4,8 @@
   const spans = document.getElementsByTagName('span');
   const saveBtn = document.querySelector('.save');
   const clearBtn = document.querySelector('.clear');
-  const arrow = document.querySelector('.arrow');
-   
+  const arrow = document.querySelector('.arrow'); 
+  
   arrow.addEventListener('click', () => {
     ul.classList.toggle('display');
   });
@@ -48,8 +48,8 @@
   ul.addEventListener(
     'click',
     (ev) => {
-      if (ev.target.tagName === 'LI') {
-        ev.target.classList.toggle('checked');
+      if (ev.target.tagName === 'IMG') {
+        ev.target.parentNode.parentNode.classList.toggle('checked');
       }
     },
     false,
