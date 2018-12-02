@@ -4,8 +4,8 @@
   const spans = document.getElementsByTagName('span');
   const saveBtn = document.querySelector('.save');
   const clearBtn = document.querySelector('.clear');
-  const arrow = document.querySelector('.arrow'); 
-  
+  const arrow = document.querySelector('.arrow');
+
   arrow.addEventListener('click', () => {
     ul.classList.toggle('display');
   });
@@ -24,8 +24,9 @@
       const li = document.createElement('li');
       const spanElement = document.createElement('span');
       const icon = document.createElement('i');
-      const unchecked = document.createElement('a');
-      unchecked.innerHTML = '<img class="uncheck" src="images/unchecked.svg" >';
+      const unchecked = document.createElement('img');
+      unchecked.className = ('uncheck');
+      // unchecked.innerHTML = '<img class="uncheck"  >';
 
       const newTodo = this.value;
       this.value = '';
@@ -49,6 +50,7 @@
     'click',
     (ev) => {
       if (ev.target.tagName === 'IMG') {
+        ev.target.classList.toggle('check');
         ev.target.parentNode.parentNode.classList.toggle('checked');
       }
     },

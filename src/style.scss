@@ -120,8 +120,20 @@ span {
 }
 
 .uncheck {
+  background-image: url("../images/unchecked.svg");
   width: 35px;
   padding-top: 7px;
   position: absolute;
   margin-left: -40px;
+  height: 35px;
+  
+}
+
+.check {
+  background-image: url("../images/checked.svg");
+  width: 35px;
+  padding-top: 7px;
+  position: absolute;
+  margin-left: -40px;
+  height: 35px;
 }
