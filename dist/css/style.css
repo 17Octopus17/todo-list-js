@@ -104,17 +104,19 @@ span {
   text-decoration: line-through; }
 
 .uncheck {
-  background-image: url("../images/unchecked.svg");
-  width: 35px;
-  padding-top: 7px;
+  background: url("../images/unchecked.svg") no-repeat;
+  width: 40px;
+  padding-top: 12px;
   position: absolute;
   margin-left: -40px;
-  height: 35px; }
+  height: 35px;
+  background-position: center; }
 
 .check {
-  background-image: url("../images/checked.svg");
-  width: 35px;
-  padding-top: 7px;
+  background: url("../images/checked.svg") no-repeat;
+  width: 40px;
+  padding-top: 12px;
   position: absolute;
   margin-left: -40px;
-  height: 35px; }
+  height: 35px;
+  background-position: center; }

@@ -24,9 +24,9 @@
       const li = document.createElement('li');
       const spanElement = document.createElement('span');
       const icon = document.createElement('i');
-      const unchecked = document.createElement('img');
+      const unchecked = document.createElement('div');
       unchecked.className = ('uncheck');
-      // unchecked.innerHTML = '<img class="uncheck"  >';
+      // unchecked.innerHTML = '<img class="uncheck" src="images/unchecked.svg" >';
 
       const newTodo = this.value;
       this.value = '';
@@ -49,9 +49,9 @@
   ul.addEventListener(
     'click',
     (ev) => {
-      if (ev.target.tagName === 'IMG') {
+      if (ev.target.tagName === 'DIV') {
         ev.target.classList.toggle('check');
-        ev.target.parentNode.parentNode.classList.toggle('checked');
+        ev.target.parentNode.classList.toggle('checked');
       }
     },
     false,
@@ -70,3 +70,4 @@
 
   loadTodo();
 })();
+
